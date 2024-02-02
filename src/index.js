@@ -1,10 +1,3 @@
-let numeroUm = 1;
-let stringUm = "1";
-let numeroTrinta = 30;
-let stringTrinta = "30";
-let numeroDez = 10;
-let stringDez = "10";
-
 // if (COMPARAR O numeroUm e a stringUm) {
 // console.log('As variáveis numeroUm e stringUm tem o mesmo valor, mas tipos diferentes')
 // } else {
@@ -20,23 +13,40 @@ document.querySelector("form").addEventListener("submit", function (event) {
   console.log("stringCatcher : ", stringCatcher);
   console.log("numberCatcher : ", numberCatcher);
 
-  getEntrances(stringCatcher, numberCatcher);
+  const resultOne = getStringAndNumber(stringCatcher, numberCatcher);
+  const resultTwo = getNumberAndNumber(stringCatcher, numberCatcher);
+  console.log("results : ", resultOne, resultTwo);
 });
 
-function getEntrances(stringCatcher, numberCatcher) {
-  let getNumberOfAString = parserFromStringToNumber(stringCatcher);
-
+function getStringAndNumber(stringCatcher, numberCatcher) {
   if (numberCatcher == stringCatcher) {
     const sumNumberAndStringResults = numberCatcher + stringCatcher;
     console.log(
-      "A soma, sendo numero concatenando com string, resulta em: " +
-        sumNumberAndStringResults +
-        ". Um falso positivo que deve ser devidamente tratada. As variáveis numeroUm e stringUm tem o mesmo valor, mas tipos diferentes"
+      "As variáveis",
+      numberCatcher,
+      " e ",
+      stringCatcher,
+      " tem o mesmo valor, mas tipos diferentes."
     );
+    console.log(
+      "A soma entre esses tipos diferentes resulta em: ",
+      sumNumberAndStringResults
+    );
+
+    return sumNumberAndStringResults;
   }
+  return;
 }
 
-function parserFromStringToNumber(string) {
-  const numberOfString = parseInt(string);
-  return numberOfString;
+function getNumberAndNumber(stringCatcher, numberCatcher) {
+  let parsedNumber = parseFloat(stringCatcher);
+
+  if (!isNaN(parsedNumber) && parsedNumber === parseFloat(numberCatcher)) {
+    const sumNumberAndNumber = parsedNumber + parseFloat(numberCatcher);
+    console.log("Soma entre mesmos tipos: ", sumNumberAndNumber);
+    return sumNumberAndNumber;
+  }
+
+  console.log("Os valores não são do mesmo tipo ou não são números.");
+  return;
 }
