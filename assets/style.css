@@ -4,7 +4,7 @@ div.container {
   align-items: center;
   justify-content: center;
 
-  margin: 3rem auto;
+  margin: 5rem auto;
   width: 200px;
   height: 200px;
 }
@@ -13,13 +13,31 @@ div.container > form {
   border: 2px solid #334366;
   border-radius: 10px;
   padding: 1rem;
+  background-color: #339a8a;
+}
+
+div.container > form input {
+  height: 32px;
+  width: 300px;
+  border: 2px solid #334366;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 5px;
 }
 
 div.container form .btn-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 1rem;
+  margin-top: 2rem;
+}
+
+div.container form .btn-container > button {
+  height: 40px;
+  width: 300px;
+  border-radius: 8px;
+  background-color: #334366;
+  border: 2px solid #000000;
 }
 
 div.results {

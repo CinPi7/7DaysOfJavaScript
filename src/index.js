@@ -1,9 +1,3 @@
-// if (COMPARAR O numeroUm e a stringUm) {
-// console.log('As variáveis numeroUm e stringUm tem o mesmo valor, mas tipos diferentes')
-// } else {
-// console.log('As variáveis numeroUm e stringUm não tem o mesmo valor')
-// }
-
 document.querySelector("form").addEventListener("submit", function (event) {
   event.preventDefault();
 
@@ -13,40 +7,67 @@ document.querySelector("form").addEventListener("submit", function (event) {
   console.log("stringCatcher : ", stringCatcher);
   console.log("numberCatcher : ", numberCatcher);
 
+  // Resultado das somas entre mesmos numeros e tipos diferentes e iguais.
   const resultOne = getStringAndNumber(stringCatcher, numberCatcher);
   const resultTwo = getNumberAndNumber(stringCatcher, numberCatcher);
-  console.log("results : ", resultOne, resultTwo);
+  console.log("Diferença dos resultados: ", resultOne, resultTwo);
 });
 
+// uso de ==
 function getStringAndNumber(stringCatcher, numberCatcher) {
-  if (numberCatcher == stringCatcher) {
-    const sumNumberAndStringResults = numberCatcher + stringCatcher;
+  if (stringCatcher == numberCatcher) {
     console.log(
       "As variáveis",
-      numberCatcher,
-      " e ",
       stringCatcher,
+      " e ",
+      numberCatcher,
       " tem o mesmo valor, mas tipos diferentes."
     );
+
+    const sumBetweenStringAndNumber = this.sum(stringCatcher, numberCatcher);
     console.log(
-      "A soma entre esses tipos diferentes resulta em: ",
-      sumNumberAndStringResults
+      "A soma de string",
+      stringCatcher,
+      "+ numero",
+      numberCatcher,
+      "=",
+      sumBetweenStringAndNumber,
+      ". O que está errado."
     );
 
-    return sumNumberAndStringResults;
+    return sumBetweenStringAndNumber;
+  } else {
+    console.log(
+      "As variáveis ",
+      stringCatcher,
+      " e ",
+      numberCatcher,
+      " não tem o mesmo valor."
+    );
   }
   return;
 }
 
+function sum(x, y) {
+  const sum = x + y;
+  return sum;
+}
+
 function getNumberAndNumber(stringCatcher, numberCatcher) {
   let parsedNumber = parseFloat(stringCatcher);
+  const string = "";
 
   if (!isNaN(parsedNumber) && parsedNumber === parseFloat(numberCatcher)) {
     const sumNumberAndNumber = parsedNumber + parseFloat(numberCatcher);
-    console.log("Soma entre mesmos tipos: ", sumNumberAndNumber);
+
+    console.log(
+      "Soma entre mesmos valores e tipos, depois de usar parseFloat: ",
+      sumNumberAndNumber
+    );
     return sumNumberAndNumber;
+  } else if (stringCatcher === string) {
+    console.log("As variáveis não tem o mesmo tipo");
   }
 
-  console.log("Os valores não são do mesmo tipo ou não são números.");
   return;
 }
