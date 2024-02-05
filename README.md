@@ -1,4 +1,6 @@
-## 7DaysOfCode
+# 7DaysOfCode
+
+## :pencil2:	WIP
 
 Um exercício, que consiste em revisar conceitos práticos importantes do JavaScript. Este repositório é inspirado pela Rafaela Ballerini. :)
 
