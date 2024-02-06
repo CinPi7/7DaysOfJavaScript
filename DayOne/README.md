@@ -1,10 +1,8 @@
 # 7DaysOfCode
 
-## :pencil2: WIP
+:hammer_and_wrench: Um exercício, que consiste em revisar conceitos práticos importantes do JavaScript. Este repositório é inspirado pela Rafaela Ballerini. :)
 
-Um exercício, que consiste em revisar conceitos práticos importantes do JavaScript. Este repositório é inspirado pela Rafaela Ballerini. :)
-
-### Dia 1
+### :pencil2: Dia 1
 
 "Existe uma situação super comum para quem utiliza o Javascript: problemas com os tipos de variáveis na hora de comparar os valores de duas variáveis entre si. Em linguagens de programação compiladas, como Java e C#, esse problema é detectado em tempo de compilação, e você que está desenvolvendo o código tem um aviso claro do erro. Já no Javascript, esses erros passam despercebidos, já que o código não passa por um compilador. Ou seja, os erros só aparecem em tempo de execução. Isso causa alguns comportamentos estranhos, como todos esses exemplos aqui abaixo retornando true:"
 
@@ -15,11 +13,11 @@ Um exercício, que consiste em revisar conceitos práticos importantes do JavaSc
 
 Mas os resultados são falso positivos.
 
-## Proposta
+## :triangular_ruler: Proposta
 
 Com isso, alguns erros comuns foram expostos numa pequena interface, onde pode-se brincar com as duas variáveis de string e number.
 
-## Pontos Interessantes a entender:
+## :wrench: Pontos Interessantes a entender:
 
 Se você tem um input que aceita entrada de texto (type="text") e digita um número nesse input, e também tem uma variável número e tenta realizar operações entre esses valores, pode haver comportamentos inesperados devido à natureza dinâmica e flexível do JavaScript em relação aos tipos de dados.
 
