@@ -1,6 +1,6 @@
-# 7DaysOfCode
+# :hammer_and_wrench: 7DaysOfCode
 
-:hammer_and_wrench: Um exercício, que consiste em revisar conceitos práticos importantes do JavaScript. Este repositório é inspirado pela Rafaela Ballerini. :)
+Um exercício, que consiste em revisar conceitos práticos importantes do JavaScript. Este repositório é inspirado pela Rafaela Ballerini. :)
 
 ### :pencil2: Dia 1
 
@@ -13,10 +13,6 @@
 
 Mas os resultados são falso positivos.
 
-## :triangular_ruler: Proposta
-
-Com isso, alguns erros comuns foram expostos numa pequena interface, onde pode-se brincar com as duas variáveis de string e number.
-
 ## :wrench: Pontos Interessantes a entender:
 
 Se você tem um input que aceita entrada de texto (type="text") e digita um número nesse input, e também tem uma variável número e tenta realizar operações entre esses valores, pode haver comportamentos inesperados devido à natureza dinâmica e flexível do JavaScript em relação aos tipos de dados.
@@ -26,6 +22,10 @@ Quando você digita um número em um campo de texto (type="text"), mesmo que o v
 Se você deseja garantir operações matemáticas apropriadas, convém converter explicitamente os valores para números antes de realizar as operações, utilizando parseInt ou parseFloat conforme necessário.
 
 Primeiro de tudo, como estamos usando inputs para pegar as variáveis, precisa-se converter o tipo number para número também, uma vez que o valor da propriedade de um input sempre será uma string em JavaScript.
+
+## :triangular_ruler: Proposta
+
+Com isso, alguns erros comuns foram expostos numa pequena interface, onde pode-se brincar com as duas variáveis de string e number, conforme proposto.
 
 <img src="./assets/images/screeenshot-1.png" alt="layout" />
 <img src="./assets/images/screenshot-2.png" alt="exemplo no console" />
