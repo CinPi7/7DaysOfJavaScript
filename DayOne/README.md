@@ -15,13 +15,11 @@ Mas os resultados são falso positivos.
 
 ## :wrench: Pontos Interessantes a entender:
 
-Se você tem um input que aceita entrada de texto (type="text") e digita um número nesse input, e também tem uma variável número e tenta realizar operações entre esses valores, pode haver comportamentos inesperados devido à natureza dinâmica e flexível do JavaScript em relação aos tipos de dados.
+Se você tem um input que aceita entrada de texto (type="text") e digita um número nesse input, e também tem uma variável número e tenta realizar operações entre esses valores, sem tratativas, pode haver comportamentos inesperados devido à natureza dinâmica e flexível do JavaScript em relação aos tipos de dados.
 
 Quando você digita um número em um campo de texto (type="text"), mesmo que o valor seja numérico, ele é tratado como uma string pelo JavaScript. Isso pode resultar em operações de concatenação ao invés de adição, por exemplo.
 
 Se você deseja garantir operações matemáticas apropriadas, convém converter explicitamente os valores para números antes de realizar as operações, utilizando parseInt ou parseFloat conforme necessário.
-
-Primeiro de tudo, como estamos usando inputs para pegar as variáveis, precisa-se converter o tipo number para número também, uma vez que o valor da propriedade de um input sempre será uma string em JavaScript.
 
 ## :triangular_ruler: Proposta
 
