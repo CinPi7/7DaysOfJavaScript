@@ -4,7 +4,10 @@ document.querySelector("form").addEventListener("submit", function (event) {
   let stringCatcher = "";
   let numberCatcher = 0;
 
-  if (event.target) {
+  const stringInput = document.getElementById("stringCatcher");
+  const numberInput = document.getElementById("numberCatcher");
+
+  if (stringInput && numberInput) {
     stringCatcher = document.getElementById("stringCatcher").value;
     numberCatcher = Number(document.getElementById("numberCatcher").value);
 
@@ -13,11 +16,6 @@ document.querySelector("form").addEventListener("submit", function (event) {
     console.log(
       "Primeiro de tudo, como estamos usando inputs para pegar as variáveis, precisa-se converter o tipo number para número, uma vez que o valor da propriedade de um input sempre será uma string em JavaScript."
     );
-    console.log(
-      "Estes são motivos para você cuidar dos tipos de dados em JavaScript:"
-    );
-
-    handleStringAndNumber(stringCatcher, numberCatcher);
 
     if (stringCatcher == numberCatcher) {
       console.log(
@@ -25,7 +23,7 @@ document.querySelector("form").addEventListener("submit", function (event) {
       );
     } else {
       console.log(
-        `As variáveis ${stringCatcher} e ${numberCatcher}  não tem o mesmo valor.`
+        `As variáveis ${stringCatcher} e ${numberCatcher} não tem o mesmo valor.`
       );
     }
 
@@ -34,7 +32,13 @@ document.querySelector("form").addEventListener("submit", function (event) {
       console.log(
         `As variáveis ${stringCatcher} e ${numberCatcher} tem o mesmo valor e mesmo tipo.`
       );
+    } else {
+      console.log(
+        `As variáveis ${stringCatcher} e ${numberCatcher} não tem o mesmo tipo.`
+      );
     }
+
+    handleStringAndNumber(stringCatcher, numberCatcher);
   }
 });
 
@@ -80,11 +84,11 @@ function handleStringAndNumber(stringCatcher, numberCatcher) {
       );
       console.log(
         `Subtração entre paresInt - número de == : ${
-          parsedInt + numberCatcher
+          parsedInt - numberCatcher
         }.`
       );
       console.log(
-        `Subtração entre unary - número de == : ${unary + numberCatcher}.`
+        `Subtração entre unary - número de == : ${unary - numberCatcher}.`
       );
       console.groupEnd();
     }
