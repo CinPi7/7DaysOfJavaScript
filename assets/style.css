@@ -6,7 +6,7 @@ div.container {
 
   margin: 5rem auto;
   width: 200px;
-  height: 200px;
+  height: 300px;
 }
 
 div.container > form {
@@ -29,7 +29,7 @@ div.container form .btn-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 div.container form .btn-container > button {
@@ -46,7 +46,21 @@ div.results {
   align-items: center;
   justify-content: center;
 
-  margin: 3rem auto;
+  margin: 2rem auto;
   width: 200px;
   height: 200px;
+}
+
+.center-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.font-roboto-mono {
+  font-family: "Roboto Mono", monospace;
+}
+
+.font-size-small {
+  font-size: 12px;
 }

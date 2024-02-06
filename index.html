@@ -6,22 +6,45 @@
     <title>7DaysOfCode</title>
 
     <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Workbench&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container">
       <h1>#7DaysOfCode</h1>
       <form>
-        <label for="stringCatcher">Entre com uma variável:</label>
-        <input type="text" id="stringCatcher" class="stringCatcher" />
+        <label for="stringCatcher" class="font-roboto-mono font-size-small"
+          >Variável tipo string:</label
+        >
+        <input
+          type="text"
+          id="stringCatcher"
+          class="stringCatcher font-roboto-mono font-size-small"
+        />
 
-        <label for="numberCatcher">Entre com outra variável:</label>
-        <input type="number" id="numberCatcher" class="numberCatcher" />
+        <label for="numberCatcher" class="font-roboto-mono font-size-small"
+          >Variável tipo number:</label
+        >
+        <input
+          type="number"
+          id="numberCatcher"
+          class="numberCatcher font-roboto-mono font-size-small"
+        />
 
         <div class="btn-container">
-          <button type="submit">enter</button>
+          <button type="submit" class="font-roboto-mono">enter</button>
         </div>
       </form>
     </div>
+
+    <div class="center-box font-size-small">
+      <p>Veja os resultados no console (dev tools do browser):</p>
+    </div>
+
     <div class="results"></div>
 
     <script src="./src/index.js"></script>
