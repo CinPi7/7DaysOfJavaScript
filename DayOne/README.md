@@ -28,3 +28,6 @@ Quando você digita um número em um campo de texto (type="text"), mesmo que o v
 Se você deseja garantir operações matemáticas apropriadas, convém converter explicitamente os valores para números antes de realizar as operações, utilizando parseInt ou parseFloat conforme necessário.
 
 Primeiro de tudo, como estamos usando inputs para pegar as variáveis, precisa-se converter o tipo number para número também, uma vez que o valor da propriedade de um input sempre será uma string em JavaScript.
+
+<img src="./assets/images/screeenshot-1.png" alt="layout" />
+<img src="./assets/images/screenshot-2.png" alt="exemplo no console" />

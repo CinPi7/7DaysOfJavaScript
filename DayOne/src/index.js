@@ -26,7 +26,6 @@ document.querySelector("form").addEventListener("submit", function (event) {
         `As variáveis ${stringCatcher} e ${numberCatcher} não tem o mesmo valor.`
       );
     }
-
     // it will always be false in this case.
     if (stringCatcher === numberCatcher) {
       console.log(
@@ -37,7 +36,6 @@ document.querySelector("form").addEventListener("submit", function (event) {
         `As variáveis ${stringCatcher} e ${numberCatcher} não tem o mesmo tipo.`
       );
     }
-
     handleStringAndNumber(stringCatcher, numberCatcher);
   }
 });
