@@ -1,0 +1,89 @@
+:root {
+  --pink: #f3dff5;
+  --blue: #334366;
+  --green: #339a8a;
+  --black: #000000;
+  --font-roboto: "Roboto Mono", monospace;
+  --font-size-12: 12px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 2rem auto;
+  background-color: var(--pink);
+}
+
+.container {
+  width: 90%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  margin: auto;
+}
+
+@media (min-width: 300px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+.form-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  border: 1px solid var(--black);
+  border-radius: 0.5rem;
+  width: 100%;
+
+  background-color: var(--green);
+  border-color: var(--blue);
+  box-shadow: 2px 2px 1px var(--black);
+}
+
+.form-box label {
+  margin: 1rem;
+  font-family: var(--font-roboto);
+}
+
+.form-box input {
+  margin: 1rem;
+  margin-bottom: 3rem;
+  height: 30px;
+  border-radius: 0.5rem;
+  padding-left: 1rem;
+  border-color: var(--blue);
+  box-shadow: 2px 1px 1px var(--black);
+}
+
+.form-box > .button-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.form-box > .button-box > button {
+  width: 500px;
+  height: 27px;
+  border-radius: 0.5rem;
+  background-color: var(--blue);
+}
+
+#name-container {
+  display: block;
+}
+
+#age-container {
+  display: none;
+}
+
+#language-container {
+  display: none;
+}
