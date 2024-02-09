@@ -90,6 +90,24 @@ body {
   flex-direction: column;
 }
 
+#professional-container {
+  display: none;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#like-studies-container {
+  display: none;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.submit-box {
+  display: none;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .results {
   display: none;
 
@@ -107,8 +125,4 @@ body {
   color: var(--pink);
   font-size: 18px;
   font-weight: bold;
-  background-color: var(--green);
-  border-color: var(--blue);
-  box-shadow: 3px 2px 3px var(--black);
-  border-radius: 10px;
 }
