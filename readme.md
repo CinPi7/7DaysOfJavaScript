@@ -5,3 +5,4 @@
 Um exercício, que consiste em revisar conceitos práticos importantes do JavaScript. Este repositório é inspirado pela Rafaela Ballerini. :)
 
 DayOne - data type errors.
+DayTwo - variables.
