@@ -16,7 +16,7 @@ body {
   background-color: var(--pink);
 }
 
-.container {
+.form-container {
   width: 90%;
   height: 100%;
 
@@ -25,6 +25,11 @@ body {
   flex-direction: column;
 
   margin: auto;
+
+  background-color: var(--green);
+  border-color: var(--blue);
+  box-shadow: 2px 2px 1px var(--black);
+  border-radius: 10px;
 }
 
 @media (min-width: 300px) {
@@ -33,26 +38,19 @@ body {
   }
 }
 
-.form-box {
+.container {
   display: flex;
   justify-content: center;
   flex-direction: column;
-
-  border: 1px solid var(--black);
-  border-radius: 0.5rem;
-  width: 100%;
-
-  background-color: var(--green);
-  border-color: var(--blue);
-  box-shadow: 2px 2px 1px var(--black);
 }
 
-.form-box label {
+.container label {
   margin: 1rem;
+  margin-top: 1.5rem;
   font-family: var(--font-roboto);
 }
 
-.form-box input {
+.container input {
   margin: 1rem;
   margin-bottom: 3rem;
   height: 30px;
@@ -62,28 +60,55 @@ body {
   box-shadow: 2px 1px 1px var(--black);
 }
 
-.form-box > .button-box {
+.box-form > .submit-box {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 1rem;
 }
 
-.form-box > .button-box > button {
+.box-form > .submit-box > button {
   width: 500px;
   height: 27px;
   border-radius: 0.5rem;
   background-color: var(--blue);
 }
 
-#name-container {
-  display: block;
+.box-form > .submit-box > button:hover {
+  background-color: var(--pink);
+}
+
+#languages-container {
+  display: none;
+  justify-content: center;
+  flex-direction: column;
 }
 
 #age-container {
   display: none;
+  justify-content: center;
+  flex-direction: column;
 }
 
-#language-container {
-  display: none;
+.results {
+  display: flex;
+
+  width: 80%;
+  height: 100%;
+
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 2rem auto;
+  padding: 2rem;
+  text-align: center;
+
+  color: var(--pink);
+  font-size: 18px;
+  font-weight: bold;
+  background-color: var(--green);
+  border-color: var(--blue);
+  box-shadow: 3px 2px 3px var(--black);
+  border-radius: 10px;
 }

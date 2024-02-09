@@ -6,47 +6,40 @@
     <title>Variáveis</title>
 
     <link rel="stylesheet" href="./assets/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/variables.png"
+      type="image/x-icon"
+    />
   </head>
   <body>
     <header>
       <h1>#7DaysOfCode</h1>
     </header>
-    <div class="container" id="name-container">
-      <form id="form-container-name">
-        <div class="form-box">
-          <label for="nameEntry">Qual seu nome?</label>
+    <div class="form-container" id="form-container">
+      <form for="questions" id="box-form" class="box-form">
+        <div class="container" id="name-container">
+          <label for="nameEntry">1. Qual seu nome?</label>
           <input type="text" name="nameEntry" id="nameEntry" />
-          <div class="button-box">
-            <button type="submit">enter</button>
-          </div>
         </div>
-      </form>
-    </div>
-    <div class="container" id="age-container">
-      <form id="form-container">
-        <div class="form-box">
-          <label for="ageEntry">Quantos anos você tem?</label>
-          <input type="text" name="ageEntry" id="ageEntry" />
-          <div class="button-box">
-            <button type="submit">enter</button>
-          </div>
+        <div class="container" id="age-container">
+          <label for="ageEntry">2. Quantos anos você tem?</label>
+          <input type="number" name="ageEntry" id="ageEntry" />
         </div>
-      </form>
-    </div>
-    <div class="container" id="language-container">
-      <form id="form-container">
-        <div class="form-box">
-          <label for="languageEntry"
-            >Qual linguagem de programação você está estudando?</label
+        <div class="container" id="languages-container">
+          <label for="languagesEntry"
+            >3. Qual linguagem de programação você está estudando?</label
           >
-          <input type="text" name="languageEntry" id="languageEntry" />
-          <div class="button-box">
-            <button type="submit">enter</button>
-          </div>
+          <input type="text" name="languagesEntry" id="languagesEntry" />
+        </div>
+        <div class="submit-box">
+          <button type="submit">enter</button>
         </div>
       </form>
     </div>
-
+    <div class="results" id="results-container">
+      <p id="paragraph-results"></p>
+    </div>
     <script src="./index.js"></script>
   </body>
 </html>
