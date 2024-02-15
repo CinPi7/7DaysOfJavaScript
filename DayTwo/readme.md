@@ -23,3 +23,6 @@ A partir da entrada dos inputs, os containers aparecem conforme a sequência das
 ## :triangular_ruler: Proposta
 
 Foi possível criar um multi-step form exibido de forma progressiva, com cada pergunta sendo apresentada sequencialmente conforme o usuário avança, o que melhora a experiência do usuário e torna o processo mais intuitivo e personalizado.
+
+https://github.com/CinPi7/7DaysOfJavaScript/assets/49377882/dc31ced0-cc12-406c-b7dc-9fbdd0bb6909
+
