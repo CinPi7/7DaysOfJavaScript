@@ -12,6 +12,11 @@ Um exercício, que consiste em revisar conceitos práticos importantes do JavaSc
 
         "Olá [nome], você tem [idade] anos e já está aprendendo [linguagem]!"
 
+4. Você gosta de estudar [linguagem]? Responda com o número 1 para SIM ou 2 para NÃO.
+   
+        1 > Muito bom! Continue estudando e você terá muito sucesso.
+        2 > Ahh que pena... Já tentou aprender outras linguagens?
+
 ## :wrench: Pontos Interessantes a entender:
 
 Em programação, variáveis são os blocos básicos de construção que processam os diferentes tipos de dados. Elas são um local onde pode-se armazenar diferentes valores de algum tipo particular durante a execução do programa. É semelhante a um container que armazena um dado. O valor dessa variável pode alterar, ou ser dinâmica, justificando o nome "variável". Por exemplo, em C, deve-se declarar uma variável inteiro como `int myVariable;` e atribuir um valor, como `myVariable = 10;`.
