@@ -1,72 +1,79 @@
 let incrementValue = 1;
 
-document.querySelector("form").addEventListener("submit", function (event) {
-  event.preventDefault();
+document
+  .getElementById("form-container")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
 
-  const getNameInput = document.getElementById("nameEntry").value;
-  const getAgeInput = document.getElementById("ageEntry").value;
-  const getLanguagesInput = document.getElementById("languagesEntry").value;
-  const getStudiesEntry = document.getElementById("studyEntry").value;
+    const nameContainer = document.getElementById("name-container");
+    const ageContainer = document.getElementById("age-container");
+    const languagesContainer = document.getElementById("languages-container");
+    const professionalContainer = document.getElementById(
+      "professional-container"
+    );
+    const resultsContainer = document.getElementById("results-container");
+    const likeStudiesContainer = document.getElementById(
+      "like-studies-container"
+    );
+    const buttonBox = document.getElementById("submit-box");
 
-  const nameContainer = document.getElementById("name-container");
-  const ageContainer = document.getElementById("age-container");
-  const languagesContainer = document.getElementById("languages-container");
-  const resultsContainer = document.getElementById("results-container");
-  const formContainer = document.getElementById("form-container");
-  const professionalContainer = document.getElementById(
-    "professional-container"
-  );
-  const professionalLabel = document.getElementById("professional-label");
-  const likeStudiesContainer = document.getElementById(
-    "like-studies-container"
-  );
-  const buttonBox = document.getElementById("submit-box");
+    const nameInput = document.getElementById("nameEntry").value.trim();
+    const ageInput = document.getElementById("ageEntry").value.trim();
+    const languagesInput = document
+      .getElementById("languagesEntry")
+      .value.trim();
+    const professionalInput = document
+      .getElementById("professionalEntry")
+      .value.trim();
+    const professionalLabel = document.getElementById("professional-label");
 
-  const studies = {
-    1: `1. Muito bom! Continue estudando e você terá muito sucesso!`,
-    2: `2. Ahh que pena... Já tentou aprender outras linguagens?`,
-  };
+    if (incrementValue === 1) {
+      if (!nameInput) {
+        alert("Favor, insira seu nome para continuar...");
+        return;
+      }
+    } else if (incrementValue === 2) {
+      if (!ageInput || isNaN(ageInput)) {
+        alert("Favor, insira sua idade para continuar...");
+        return;
+      }
+    } else if (incrementValue === 3) {
+      if (!languagesInput) {
+        alert("Favor, insira a linguagem de programação que está estudando...");
+        return;
+      }
+    } else if (incrementValue === 5) {
+      if (!professionalInput || isNaN(professionalInput)) {
+        console.log("first", professionalInput);
 
-  incrementValue++;
+        alert("Favor, responda com o número 1 para SIM ou 2 para NÃO.");
+        return;
+      }
+    }
 
-  if (incrementValue == 1) {
-    ageContainer.style.display = "flex";
-    nameContainer.style.display = "none";
-    console.log(incrementValue);
-  } else if (incrementValue == 2) {
-    nameContainer.style.display = "none";
-    ageContainer.style.display = "flex";
-    languagesContainer.style.display = "none";
-    console.log(incrementValue);
-  } else if (incrementValue == 3) {
-    resultsContainer.style.display = "none";
-    languagesContainer.style.display = "flex";
-    nameContainer.style.display = "none";
-    ageContainer.style.display = "none";
-    console.log(incrementValue);
-  } else if (incrementValue == 4) {
-    languagesContainer.style.display = "none";
-    formContainer.style.display = "flex";
-    resultsContainer.style.display = "flex";
-    console.log(incrementValue);
-  } else if (incrementValue == 5) {
-    professionalContainer.style.display = "flex";
-    resultsContainer.style.display = "none";
-    formContainer.style.display = "flex";
-    professionalLabel.textContent = `3. Você gosta de estudar ${getLanguagesInput}? Responda com o número 1 para SIM ou 2
-    para NÃO.`;
-    console.log(incrementValue);
-  }
-  const resultText = `Olá ${getNameInput}, você tem ${getAgeInput} anos e já está aprendendo ${getLanguagesInput} !`;
-  resultsContainer.textContent = resultText;
+    if (incrementValue === 1) {
+      nameContainer.style.display = "none";
+      ageContainer.style.display = "flex";
+    } else if (incrementValue === 2) {
+      ageContainer.style.display = "none";
+      languagesContainer.style.display = "flex";
+    } else if (incrementValue === 3) {
+      languagesContainer.style.display = "none";
+      resultsContainer.style.display = "flex";
+      resultsContainer.textContent = `Oie, ${nameInput}, você tem ${ageInput} anos e já está estudando ${languagesInput}!`;
+    } else if (incrementValue === 4) {
+      resultsContainer.style.display = "none";
+      professionalContainer.style.display = "flex";
+      professionalLabel.textContent = `4. Você gosta de estudar ${languagesInput}? Responda com o número 1 para SIM ou 2 para NÃO.`;
+    } else if (incrementValue === 5) {
+      professionalContainer.style.display = "none";
+      likeStudiesContainer.style.display = "flex";
+      likeStudiesContainer.textContent =
+        professionalInput === "1"
+          ? `Muito bom! Continue estudando ${languagesInput} e você terá muito sucesso!`
+          : "Ahh que pena... Já tentou aprender outras linguagens?";
+      buttonBox.style.display = "none";
+    }
 
-  if (incrementValue == 6 && studies[getStudiesEntry]) {
-    likeStudiesContainer.style.display = "flex";
-    likeStudiesContainer.textContent = studies[getStudiesEntry];
-    formContainer.style.display = "flex";
-    resultsContainer.style.display = "none";
-    professionalContainer.style.display = "none";
-    buttonBox.style.display = "none";
-    console.log(incrementValue);
-  }
-});
+    incrementValue++;
+  });

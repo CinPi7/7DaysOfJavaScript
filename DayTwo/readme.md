@@ -16,6 +16,10 @@ Um exercício, que consiste em revisar conceitos práticos importantes do JavaSc
 
 Em programação, variáveis são os blocos básicos de construção que processam os diferentes tipos de dados. Elas são um local onde pode-se armazenar diferentes valores de algum tipo particular durante a execução do programa. É semelhante a um container que armazena um dado. O valor dessa variável pode alterar, ou ser dinâmica, justificando o nome "variável". Por exemplo, em C, deve-se declarar uma variável inteiro como `int myVariable;` e atribuir um valor, como `myVariable = 10;`.
 
+O programa inicia com um valor que irá incrementar a medida que documento executa, começando com o valor 1. Essa variável é utilizada para o progresso do formulário sequencial. Evita-se o comportamento padrão de recarregar a página com o `event.preventDefault();`.
+
+A partir da entrada dos inputs, os containers aparecem conforme a sequência das perguntas e suas respostas. Os containers e inputs são referenciados com seus IDs e selecionados conforme as condicionais em conjunto com a variável `incrementValue` para controlar a sequência do formulário.
+
 ## :triangular_ruler: Proposta
 
-Foi possível criar um formulário exibido de forma progressiva, com cada pergunta sendo apresentada sequencialmente conforme o usuário avança, o que melhora a experiência do usuário e torna o processo mais intuitivo.
+Foi possível criar um multi-step form exibido de forma progressiva, com cada pergunta sendo apresentada sequencialmente conforme o usuário avança, o que melhora a experiência do usuário e torna o processo mais intuitivo e personalizado.
