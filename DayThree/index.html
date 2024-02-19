@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estruturas de Controle de Fluxo</title>
+
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>#7DaysOfCode</h1>
+    </header>
+    <div class="form-container">
+      <form id="form">
+        <!-- Front-end ou Bck-end ? -->
+        <div class="input-container" id="professional-field">
+          <label for="professional-field"
+            >1. Você gostaria de seguir a área de Front-End ou Back-End?</label
+          >
+          <input type="text" id="choose-a-field" name="professional-field" />
+        </div>
+
+        <!-- se front-end selecione react, vue, ou angular -->
+        <div class="input-container" id="front-end-journey">
+          <label for="front-end-journey"
+            >2. Deseja aprender React, Vue ou Angular?</label
+          >
+          <input type="text" name="front-end-journey" id="which-front-end" />
+        </div>
+
+        <!-- -->
+        <div class="input-container" id="choose-react">
+          <label for="react-journey"
+            >3. Deseja seguir se especializando na área escolhida ou seguir se
+            desenvolvendo para se tornar um Fullstack?</label
+          >
+          <input type="text" name="react-journey" id="choose-path" />
+        </div>
+
+        <!-- se back-end selecione c# ou java -->
+        <div class="input-container" id="back-end-journey">
+          <label for="back-end-journey" id=""
+            >2. Deseja aprender C# ou Java?</label
+          >
+          <input type="text" id="which-back-end" name="back-end-journey" />
+        </div>
+
+        <div class="button-container">
+          <button type="submit">Go</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

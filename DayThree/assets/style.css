@@ -1,0 +1,93 @@
+:root {
+  --pink: #f3dff5;
+  --blue: #334366;
+  --green: #339a8a;
+  --black: #000000;
+  --font-roboto: "Roboto Mono", monospace;
+  --font-size-12: 12px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 2rem auto;
+  background-color: var(--pink);
+}
+
+header {
+  margin-bottom: 3rem;
+}
+
+.form-container {
+  width: 90%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  margin: auto;
+
+  background-color: var(--green);
+  border-color: var(--blue);
+  box-shadow: 2px 2px 1px var(--black);
+  border-radius: 10px;
+}
+
+@media (min-width: 300px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.input-container label {
+  font-family: var(--font-roboto);
+  margin: 2rem;
+}
+
+.input-container input {
+  height: 30px;
+  width: 90%;
+  margin: 1rem;
+
+  border-radius: 8px;
+  padding: 5px 10px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 1rem auto;
+}
+
+.button-container > button {
+  height: 30px;
+  width: 300px;
+  border-radius: 8px;
+  background-color: var(--blue);
+  color: var(--pink);
+}
+
+#front-end-journey {
+  display: none;
+}
+
+#back-end-journey {
+  display: none;
+}
+
+#choose-react {
+  display: none;
+}
